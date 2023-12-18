@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}

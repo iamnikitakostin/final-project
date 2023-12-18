@@ -1,0 +1,20 @@
+.app__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+}
+
+.app__header-logo {
+    width: 200px;
+}
+
+.app__header-logo img {
+    width: 100%;
+}
+
+nav {
+    width: 70%;
+}
