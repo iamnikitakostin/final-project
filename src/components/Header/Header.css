@@ -1,10 +1,9 @@
 .app__header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     padding: 1rem;
-    background-color: black;
 }
 
 .app__header-logo {
@@ -16,5 +15,25 @@
 }
 
 nav {
-    width: 70%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .app__header ul {
+        gap: 1rem;
+    }
+
+    .app__header-logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app__header ul {
+        gap: 0.5rem;
+    }
+
+    .app__header-logo {
+        width: 120px;
+    }
 }

@@ -1,0 +1,42 @@
+.headtext__subtitle {
+    color: var(--color-yellow);
+}
+
+.headtext__section {
+    color: var(--color-white);
+}
+
+.main__banner {
+    background-color: var(--color-green);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.main__banner-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 250px;
+    color: var(--color-white);
+}
+
+.custom__button {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main__banner-picture {
+    width: 300px;
+    height: 250px;
+}
+
+.main__banner-picture img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+}

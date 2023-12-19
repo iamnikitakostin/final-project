@@ -7,5 +7,10 @@ nav {
 ul {
     list-style: none;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+}
+
+ul a {
+    color: #333333;
+    text-decoration: none;
 }
