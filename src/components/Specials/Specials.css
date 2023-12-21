@@ -24,6 +24,8 @@
 .specials__offers-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-white);
     width: 300px;
     border-radius: 20px;
@@ -31,6 +33,7 @@
 
 .item__heading {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     padding-top: 1rem;
 }
@@ -51,4 +54,12 @@
 
 .p__regular {
     padding: 2.5rem;
+}
+
+.item__order {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
 }

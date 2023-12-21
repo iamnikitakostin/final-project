@@ -1,0 +1,38 @@
+.app__footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--color-green);
+    color: var(--color-yellow);
+    margin-top: 2rem;
+}
+
+.app__footer-findUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.headtext__section {
+    color: var(--color-yellow);
+}
+
+.app__footer-logo {
+    width: 150px;
+}
+
+.app__footer-logo img {
+    width: 100%;
+}
+
+.identity-map {
+    height: 150px;
+}
+
+.findUs__hours ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Specials.css'
-
 import picture1 from '../../assets/salad.jpg'
 import picture2 from '../../assets/lemon.jpg'
 import picture3 from '../../assets/bruchetta.jpg'
@@ -22,7 +21,7 @@ function Specials() {
                     <p className='p__highlight'>$12.99</p>
                 </div>
                 <p className='p__regular'>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnised with cruncy garlic and rosemary croutons.</p>
-                <a type='button'>Order a delivery</a>
+                <a type='button' className='item__order'>Order a delivery →</a>
             </div>
             <div className="specials__offers-item">
                 <div className="item__image">
@@ -33,7 +32,7 @@ function Specials() {
                     <p className='p__highlight'>$12.99</p>
                 </div>
                 <p className='p__regular'>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnised with cruncy garlic and rosemary croutons.</p>
-                <a type='button'>Order a delivery</a>
+                <a type='button' className='item__order'>Order a delivery →</a>
             </div>
             <div className="specials__offers-item">
                 <div className="item__image">
@@ -44,7 +43,7 @@ function Specials() {
                     <p className='p__highlight'>$12.99</p>
                 </div>
                 <p className='p__regular'>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnised with cruncy garlic and rosemary croutons.</p>
-                <a type='button'>Order a delivery</a>
+                <a type='button' className='item__order'>Order a delivery →</a>
             </div>
         </div>
     </div>
