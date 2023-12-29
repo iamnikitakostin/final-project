@@ -1,0 +1,46 @@
+.app__booking-success {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.app__booking-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__booking-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+}
+
+.message-confirmation {
+    font-size: 3rem;
+}
+
+.details-text {
+    font-size: 2rem;
+}
+
+.app__footer-logo {
+    width: 150px;
+}
+
+.app__footer-logo img {
+    width: 100%;
+}
+
+.message-warning {
+    padding-top: 2rem;
+    height: 100%;
+    width: 100%;
+}

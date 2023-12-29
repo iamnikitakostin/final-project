@@ -6,7 +6,7 @@ import picture3 from '../../assets/bruchetta.jpg'
 
 function Specials() {
   return (
-    <div className='main__specials flex__center'>
+    <div className='main__specials flex__center' id='specials'>
         <div className="main__specials-heading">
             <h1>This weeks specials!</h1>
             <button className='custom__button'>Online Menu</button>

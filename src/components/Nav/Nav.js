@@ -9,10 +9,10 @@ function Nav() {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li><a href=''>About</a></li>
-        <li><a href=''>Menu</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#specials'>Menu</a></li>
         <li>
-          <Link to="booking">Reservations</Link>
+          <Link to="/booking">Reservations</Link>
         </li>
         <li><a href=''>Order Online</a></li>
         <li><a href=''>Login</a></li>

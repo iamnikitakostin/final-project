@@ -10,7 +10,7 @@ function Footer() {
         </div>
         <div className="app__footer-identity">
           <div className='identity-map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564962.6297609241!2d-113.92880828486594!3d51.08731007868543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537171d909a5e60f%3A0x46319103c140df8!2sLemon%20Garden!5e0!3m2!1sen!2sca!4v1703191822810!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564962.6297609241!2d-113.92880828486594!3d51.08731007868543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537171d909a5e60f%3A0x46319103c140df8!2sLemon%20Garden!5e0!3m2!1sen!2sca!4v1703191822810!5m2!1sen!2sca" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div className="app__footer-findUs">
@@ -30,7 +30,6 @@ function Footer() {
             <p className='p__highlight'>+1 (604) 285-5113</p>
           </div>
         </div>
-
     </footer>
   )
 }
