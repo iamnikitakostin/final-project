@@ -63,3 +63,30 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 992px) {
+    .main__specials-offers {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .specials__offers-item {
+        width: 80%;
+    }
+
+    .main__specials-heading {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main__specials {
+        width: 100%;
+    }
+
+    .specials__offers-item {
+        width: 100%;
+    }
+}

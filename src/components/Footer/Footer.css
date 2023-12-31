@@ -36,3 +36,21 @@
     gap: 0;
 }
 
+@media screen and (max-width: 992px) {
+    .app__footer {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 2rem 4rem 2rem;
+        min-height: 100vh;
+    }
+
+    .identity-map {
+        height: 200px;
+    }
+
+    .app__footer-logo {
+        justify-content: center;
+    }
+}

@@ -8,6 +8,7 @@ function BookingForm(props) {
     const [time, setTime] = React.useState("17:00");
     const [guests, setGuests] = React.useState(1);
     const [occasion, setOccasion] = React.useState("birthday");
+    const [policy, setPolicy] = React.useState(false);
     const navigate = useNavigate();
 
     const todayDate = new Date().toISOString().slice(0, 10);;
@@ -16,12 +17,6 @@ function BookingForm(props) {
     console.log("available", availableTimes)
 
     const dispatch = props.dispatch;
-
-    const timeOnChange = (newTime) => {
-        setTime(newTime)
-        dispatch({ type: 'UPDATE_TIMES', payload: newTime})
-        console.log(newTime, "SENDDDD")
-    }
 
     const dateOnChange = (newDate) => {
         setDate(newDate)
@@ -45,25 +40,25 @@ function BookingForm(props) {
 
     return (
         <div className='app__booking' >
-            <Link to='/'><button type='button' className='close__button'>X</button></Link>
+            <Link to='/'><button type='button' aria-label='Close on Click' className='close__button'>X</button></Link>
             <form className='app__booking__form' onSubmit={submitForm}>
-                <div className="booking__form-input">
+                <div className="booking__form-input" aria-label='Choose Date'>
                     <label className='p__description' htmlFor='res-date'>Date</label>
                     <input type='date' defaultValue={date} min={todayDate} id='res-date' onChange={(e) => dateOnChange(e.target.value)}/>
                 </div>
                 <div className="booking__form-input">
-                    <label className='p__description' htmlFor='res-time'>Time</label>
-                    <select id='res-time' onChange={(e) => timeOnChange(e.target.value)}>
+                    <label className='p__description' htmlFor='res-time' aria-label='Choose Time'>Time</label>
+                    <select id='res-time' onChange={(e) => setTime(e.target.value)}>
                         {availableTimes.times.map((element) => (
                             <option value={element} key={element}>{element}</option>
                         ))}
                     </select>
                 </div>
-                <div className="booking__form-input" id='booking-guests'>
-                    <label className='p__description' htmlFor='res-guests'>Number of Guests</label>
+                <div className="booking__form-input" id='booking-guests' aria-label='Choose Guests'>
+                    <label className='p__description' htmlFor='res-guests'>Guests</label>
                     <input type='number' defaultValue='1' min='1' max='10' id="res-guests" onChange={(e) => setGuests(e.target.value)}/>
                 </div>
-                <div className="booking__form-input">
+                <div className="booking__form-input" aria-label='Choose Oscasion'>
                     <label className='p__description' htmlFor='res-occasion'>Occasion</label>
                     <select id='res-occasion' onChange={(e) => setOccasion(e.target.value)}>
                         <option value="birthday">Birthday</option>
@@ -71,7 +66,11 @@ function BookingForm(props) {
                         <option value="date">Date</option>
                     </select>
                 </div>
-            <input className='custom__button' type='submit' value='Make Your reservation'/>
+                <div className='booking__form-input' aria-label='Agree with booking policy'>
+                    <label className='p__description' htmlFor='res-policy'>I accept the booking policy.</label>
+                    <input type='checkbox' id='res-policy' onChange={(e) => setPolicy(e.target.checked)}/>
+                </div>
+            <input className='custom__button' type='submit' disabled={!policy} title={policy ? '' : 'Please, accept our booking policy.'} value='Make Your reservation' aria-label='Submit Button'/>
             </form>
         </div>
     )
